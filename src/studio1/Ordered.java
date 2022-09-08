@@ -16,6 +16,16 @@ public class Ordered {
 		System.out.println("Value for z?");
 		int z = in.nextInt();
 
+		boolean ascending = (x < y) && (y < z);
+		
+		boolean descending = (x > y) && (y > z);
+		
+		boolean isOrdered = ascending || descending;
+		
+		System.out.println(isOrdered);
+		
+		// && makes it so that both statements have to be true for it to print true
+		// || or makes it so that if only one statement is true, it'll make it true
 	}
 
 }
